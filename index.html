@@ -1072,6 +1072,13 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        #cvs {
+            width: 120%;
+            height: 120%;
+            top: -10%;
+            left: -10%;
+        }
     </style>
 </head>
 
@@ -1097,10 +1104,13 @@
 
     <!-- ─── HERO ─── -->
     <section id="inicio">
+        <canvas id="cvs" style="position:absolute; inset:0; z-index:0; pointer-events:none;"></canvas>
         <div class="hero-bg"></div>
         <div class="hero-grid-line"></div>
         <div class="hero-inner container">
+
             <div class="hero-content">
+
                 <div class="hero-tag">Disponible para proyectos</div>
                 <h1 class="hero-name">Kevin<br><em>Torrez</em></h1>
                 <p class="hero-role"># Desarrollador Full Stack</p>
@@ -1546,6 +1556,49 @@
         }, { threshold: 0.12 });
 
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+
+
+        /* PARTICLES CANVAS */
+        const canvas = document.getElementById('cvs'), ctx = canvas.getContext('2d');
+        let W, H, pts = [];
+        function rsz() {
+            const dpr = window.devicePixelRatio || 1;
+
+            W = canvas.offsetWidth;
+            H = canvas.offsetHeight;
+
+            canvas.width = W * dpr;
+            canvas.height = H * dpr;
+
+            ctx.setTransform(1, 0, 0, 1, 0, 0); // reset importante
+            ctx.scale(dpr, dpr);
+        }
+        rsz(); window.addEventListener('resize', () => { rsz(); init() });
+        class P {
+            constructor() { this.reset() }
+            reset() {
+                this.x = Math.random() * W; this.y = Math.random() * H; this.r = Math.random() * 3 + 1;
+                this.vx = (Math.random() - .5) * .25; this.vy = (Math.random() - .5) * .25; this.a = Math.random() * .7 + .03
+            }
+            step() { this.x += this.vx; this.y += this.vy; if (this.x < 0 || this.x > W || this.y < 0 || this.y > H) this.reset() }
+            draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2); ctx.fillStyle = `rgba(100,220,180,${this.a})`; ctx.fill() }
+        }
+        function init() { pts = Array.from({ length: 130 }, () => new P()) }
+        init();
+        function frame() {
+            ctx.clearRect(0, 0, W, H);
+            pts.forEach(p => { p.step(); p.draw() });
+            for (let i = 0; i < pts.length; i++)for (let j = i + 1; j < pts.length; j++) {
+                const d = Math.hypot(pts[i].x - pts[j].x, pts[i].y - pts[j].y);
+                if (d < 110) {
+                    ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y);
+                    ctx.strokeStyle = `rgba(100,220,180,${.1 * (1 - d / 110)})`; ctx.lineWidth = .8; ctx.stroke()
+                }
+            }
+            requestAnimationFrame(frame);
+        }
+        frame();
     </script>
 </body>
 

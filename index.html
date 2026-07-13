@@ -186,7 +186,7 @@
             border: 0;
             z-index: 0;
             margin-right: auto;
-              transform: translateX(-100px);
+            transform: translateX(-100px);
         }
 
         .hero-inner {
@@ -655,9 +655,6 @@
         }
 
         /* ─── PROJECTS ─── */
-        #proyectos {
-            background: var(--bg);
-        }
 
         .projects-grid {
             display: grid;
@@ -927,7 +924,7 @@
 
         /* ─── FOOTER ─── */
         footer {
-            background: var(--bg);
+
             border-top: 1px solid var(--border);
             padding: 3rem 2rem;
         }
@@ -1141,13 +1138,14 @@
 
             <div class="hero-content">
 
-                <div class="hero-tag">Disponible para proyectos</div>
+                <div class="hero-tag">Disponible para nuevos proyectos</div>
                 <h1 class="hero-name">Kevin<br><em>Torrez</em></h1>
-                <p class="hero-role"># Desarrollador Full Stack</p>
+                <p class="hero-role">Desarrollador Full Stack</p>
                 <p class="hero-desc">
-                    Ingeniero en sistemas basado en <strong>Cochabamba, Bolivia</strong>. Especializado en aplicaciones
-                    móviles y sistemas web . Actualmente liderando el desarrollo de <strong>Geo Catastro
-                        Móvil</strong> — tecnología de campo para gestión catastral geográfica.
+                    Ingeniero en sistemas ubicado en <strong>Cochabamba, Bolivia</strong>.
+                    Especializado en el desarrollo de aplicaciones móviles, web y de escritorio.
+                    Actualmente lidero el desarrollo de <strong>Geo Catastro Móvil</strong>,
+                    una solución tecnológica de campo para la gestión catastral geográfica.
                 </p>
                 <div class="hero-cta">
                     <a href="#proyectos" class="btn btn-primary">
@@ -1202,45 +1200,30 @@
                         <h2 class="section-title">Construyo soluciones<br><em>que importan</em></h2>
                     </div>
                     <p>
-                        Soy desarrollador apasionado con experiencia en el ecosistema completo de desarrollo: desde
-                        aplicaciones móviles con <strong>React Native</strong> hasta backends robustos con
-                        <strong>FastAPI y .NET</strong>, pasando por integraciones IoT y visión por computadora.
+                        Soy desarrollador con experiencia en el ecosistema completo de desarrollo de software:
+                        desde aplicaciones móviles hasta sistemas web y de escritorio, con backends robustos
+                        , documentación técnica con <strong>Storybook y Docusaurus</strong>, y un enfoque constante en
+                        la escalabilidad
+                        de cada proyecto.
                     </p>
                     <p>
-                        Actualmente lidero el desarrollo de <strong>Geo Catastro Móvil</strong>, un sistema integral de
-                        gestión catastral geográfica que combina tecnología GIS, sincronización en tiempo real y
-                        procesamiento de datos de campo — revolucionando cómo se recopila información territorial.
+                        Actualmente lidero el desarrollo de <strong>Geo Catastro Móvil</strong>, un sistema integral
+                        de gestión catastral geográfica que combina tecnología GIS, sincronización en tiempo real
+                        y procesamiento de datos de campo, transformando la forma en que se recopila información
+                        territorial.
                     </p>
                     <p>
-                        Me enfoco en escribir código limpio, escalable y mantenible. Creo que la mejor tecnología es
-                        aquella que resuelve problemas reales de forma elegante.
+                        Trabajo con responsabilidad, buena comunicación y compromiso con los plazos
+                        establecidos, ya sea liderando un proyecto de forma independiente o integrado
+                        a un equipo de desarrollo.
                     </p>
 
-                    <div class="timeline" style="margin-top: 2.5rem;">
-                        <div class="timeline-item">
-                            <div class="timeline-year">2024 — Presente</div>
-                            <div class="timeline-title">Desarrollador Líder · Geo Catastro Móvil</div>
-                            <div class="timeline-desc">Desarrollo móvil con React Native, integración GIS/Esri, backend
-                                FastAPI</div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2023 — 2024</div>
-                            <div class="timeline-title">Proyectos Full Stack independientes</div>
-                            <div class="timeline-desc">APIs .NET, sistemas de gestión, clasificación con YOLO/OpenCV
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2021 — 2025</div>
-                            <div class="timeline-title">Ingeniería en Sistemas</div>
-                            <div class="timeline-desc">Formación en desarrollo de software, bases de datos , IoT y IA
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="fade-in fade-in-delay-2">
                     <div class="section-label" style="margin-bottom: 1.5rem;">Stack tecnológico</div>
                     <div class="skills-grid">
+
                         <div class="skill-group">
                             <div class="skill-group-title">Mobile</div>
                             <div class="skill-tags">
@@ -1249,15 +1232,7 @@
                                 <span class="skill-tag">Android</span>
                             </div>
                         </div>
-                        <div class="skill-group">
-                            <div class="skill-group-title">Backend</div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">FastAPI</span>
-                                <span class="skill-tag">.NET</span>
-                                <span class="skill-tag">C#</span>
-                                <span class="skill-tag">Python</span>
-                            </div>
-                        </div>
+
                         <div class="skill-group">
                             <div class="skill-group-title">Frontend</div>
                             <div class="skill-tags">
@@ -1267,373 +1242,361 @@
                                 <span class="skill-tag">JavaScript</span>
                             </div>
                         </div>
+
                         <div class="skill-group">
-                            <div class="skill-group-title">Datos & DevOps</div>
+                            <div class="skill-group-title">Backend</div>
                             <div class="skill-tags">
-                                <span class="skill-tag">PostgreSQL</span>
-                                <span class="skill-tag">MySQL</span>
-                                <span class="skill-tag">Firebase</span>
+                                <span class="skill-tag">FastAPI</span>
+                                <span class="skill-tag">.NET</span>
+                                <span class="skill-tag">C#</span>
+                                <span class="skill-tag">Python</span>
+                            </div>
+                        </div>
 
-                                <span class="skill-tag">Grafana</span>
-                                <span class="skill-tag">Zabbix</span>
+                        <div class="skill-group">
+                            <div class="skill-group-title">Escritorio</div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Electron</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <div class="skill-group-title">Base de Datos & DevOps</div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">SQL</span>
                                 <span class="skill-tag">Docker</span>
-                            </div>
-                        </div>
-                        <div class="skill-group" style="grid-column: 1/-1;">
-                            <div class="skill-group-title">Especialidades</div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">GIS / Esri</span>
-                                <span class="skill-tag">YOLO</span>
-                                <span class="skill-tag">OpenCV</span>
-                                <span class="skill-tag">JWT / RBAC</span>
-                                <span class="skill-tag">IoT</span>
-                                <span class="skill-tag">REST API</span>
-                                <span class="skill-tag">Swagger / OpenAPI</span>
+                                <span class="skill-tag">Docker Compose</span>
+                                <span class="skill-tag">Jenkins</span>
                                 <span class="skill-tag">GitHub / GitLab</span>
+                                <span class="skill-tag">CI/CD</span>
+
                             </div>
                         </div>
+
+                        <div class="skill-group">
+                            <div class="skill-group-title">Documentación</div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Storybook</span>
+                                <span class="skill-tag">Docusaurus</span>
+                                <span class="skill-tag">Swagger / OpenAPI</span>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- ─── PROYECTOS ─── -->
-    <section id="proyectos">
-        <div class="container">
-            <div class="section-head fade-in">
-                <div class="section-label">Proyectos</div>
-                <h2 class="section-title">Trabajo <em>destacado</em></h2>
-                <p class="section-sub">Selección de proyectos que reflejan mi enfoque en soluciones reales, arquitectura
-                    sólida y experiencia de usuario cuidada.</p>
+
+        <!-- ─── PROYECTOS ─── -->
+        <section id="proyectos">
+            <div class="container">
+                <div class="section-head fade-in">
+                    <div class="section-label">Proyectos</div>
+                    <h2 class="section-title">Trabajo <em>destacado</em></h2>
+                    <p class="section-sub">Selección de proyectos que reflejan mi enfoque en soluciones reales,
+                        arquitectura
+                        sólida y experiencia de usuario cuidada.</p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Proyecto 1 -->
+                    <div class="project-card fade-in">
+                        <div class="project-thumb">
+                            <img src="./geomovil.jpeg" alt="Geo Catastro Móvil" onerror="this.style.display='none'">
+                            <div class="project-thumb-fallback"
+                                style="background: linear-gradient(135deg, #0e1420, #1a2a3a);">🗺️</div>
+                            <span class="project-num">01</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Geo Catastro Móvil</h3>
+                            <p class="project-desc">Solución móvil integral para gestión catastral geográfica con
+                                sincronización de datos en tiempo real e integración GIS. Permite trabajo offline en
+                                campo
+                                con posterior sincronización al servidor central.</p>
+
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div class="project-card fade-in fade-in-delay-1">
+                        <div class="project-thumb">
+                            <img src="./eccelisa.jpg" alt="Clasificación de techos" onerror="this.style.display='none'">
+                            <div class="project-thumb-fallback"
+                                style="background: linear-gradient(135deg, #0e1420, #1a1a2e);"></div>
+                            <span class="project-num">02</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Sistema de Gestión Parroquial</h3>
+                            <p class="project-desc">Ecclesia es un sistema integral de gestión parroquial diseñado para
+                                digitalizar y simplificar la administración de parroquias y comunidades religiosas.
+                                con versión web y versión de escritorio</p>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="project-card fade-in fade-in-delay-2">
+                        <div class="project-thumb">
+                            <img src="./alora.jpg" alt="Sistema de Alquiler" onerror="this.style.display='none'">
+                            <div class="project-thumb-fallback"
+                                style="background: linear-gradient(135deg, #0e1420, #1f2a1a);">🏠</div>
+                            <span class="project-num">03</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Sistema de Gestión de Alquiler</h3>
+                            <p class="project-desc">Plataforma de gestión de alquileres desarrollada en React con diseño
+                                minimalista, optimizada para una experiencia clara y eficiente. Interfaz intuitiva para
+                                propietarios e inquilinos.</p>
+
+                            <div class="project-links">
+                                <a href="https://alora-seven-sooty.vercel.app/" target="_blank" class="btn btn-primary">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                    Demo en vivo
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 4 -->
+                    <div class="project-card fade-in">
+                        <div class="project-thumb">
+                            <img src="./project4-1.jpg" alt="Gym Management API" onerror="this.style.display='none'">
+                            <div class="project-thumb-fallback"
+                                style="background: linear-gradient(135deg, #0e1420, #2a1a1a);">💪</div>
+                            <span class="project-num">04</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Gym Management API</h3>
+                            <p class="project-desc">Backend profesional en .NET 8 para gestión integral de un gimnasio.
+                                Arquitectura por capas, autenticación JWT, autorización RBAC y versionado de API (v1,
+                                v2)
+                                para garantizar escalabilidad.</p>
+
+                            <div class="project-links">
+                                <a href="https://github.com/ketopi/ApiGimnacio" target="_blank" class="btn btn-outline">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 5 -->
+                    <div class="project-card fade-in fade-in-delay-1">
+                        <div class="project-thumb">
+                            <img src="./phoenix.png" alt="Server Monitoring" onerror="this.style.display='none'">
+                            <div class="project-thumb-fallback"
+                                style="background: linear-gradient(135deg, #0e1420, #0a1a2a);">📊</div>
+                            <span class="project-num">05</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Phoenix studio</h3>
+                            <p class="project-desc"> Sitio web moderno para Phoenix Studio, diseñado con una interfaz
+                                atractiva y una experiencia visual inmersiva. Desarrollado con tecnologías de última
+                                generación para ofrecer rendimiento, diseño responsive y una navegación fluida.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 6 -->
+                    <div class="project-card fade-in fade-in-delay-2">
+                        <div class="project-thumb">
+                            <img src="./yolo.jpg" alt="Sistema de Gestión Parroquial"
+                                onerror="this.style.display='none'">
+                            <div class="project-thumb-fallback"
+                                style="background: linear-gradient(135deg, #0e1420, #2a1f0e);">⛪</div>
+                            <span class="project-num">06</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Clasificación de Tipos de Techo</h3>
+                            <p class="project-desc">Sistema de clasificación en tiempo real para diferentes tipos de
+                                tejados
+                                mediante algoritmos de deep learning. Diseñado para aplicaciones catastrales y
+                                geoespaciales
+                                con alta precisión de detección.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
-
-            <div class="projects-grid">
-
-                <!-- Proyecto 1 -->
-                <div class="project-card fade-in">
-                    <div class="project-thumb">
-                        <img src="./geomovil.jpeg" alt="Geo Catastro Móvil" onerror="this.style.display='none'">
-                        <div class="project-thumb-fallback"
-                            style="background: linear-gradient(135deg, #0e1420, #1a2a3a);">🗺️</div>
-                        <span class="project-num">01</span>
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">Geo Catastro Móvil</h3>
-                        <p class="project-desc">Solución móvil integral para gestión catastral geográfica con
-                            sincronización de datos en tiempo real e integración GIS. Permite trabajo offline en campo
-                            con posterior sincronización al servidor central.</p>
-                        <div class="project-stack">
-                            <span class="stack-badge">React Native</span>
-                            <span class="stack-badge">Expo</span>
-                            <span class="stack-badge">FastAPI</span>
-                            <span class="stack-badge">PostgreSQL</span>
-                            <span class="stack-badge">GIS</span>
-                            <span class="stack-badge">Esri</span>
+        </section>
+        <section id="contacto">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="fade-in">
+                        <div class="section-head">
+                            <div class="section-label">Contacto</div>
+                            <h2 class="section-title">¿Tienes un<br><em>proyecto en mente?</em></h2>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 2 -->
-                <div class="project-card fade-in fade-in-delay-1">
-                    <div class="project-thumb">
-                        <img src="./yolo.jpg" alt="Clasificación de techos" onerror="this.style.display='none'">
-                        <div class="project-thumb-fallback"
-                            style="background: linear-gradient(135deg, #0e1420, #1a1a2e);">🤖</div>
-                        <span class="project-num">02</span>
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">Clasificación de Tipos de Techo</h3>
-                        <p class="project-desc">Sistema de clasificación en tiempo real para diferentes tipos de tejados
-                            mediante algoritmos de deep learning. Diseñado para aplicaciones catastrales y geoespaciales
-                            con alta precisión de detección.</p>
-                        <div class="project-stack">
-                            <span class="stack-badge">Python</span>
-                            <span class="stack-badge">YOLO</span>
-                            <span class="stack-badge">OpenCV</span>
-                            <span class="stack-badge">FastAPI</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 3 -->
-                <div class="project-card fade-in fade-in-delay-2">
-                    <div class="project-thumb">
-                        <img src="./alora.jpg" alt="Sistema de Alquiler" onerror="this.style.display='none'">
-                        <div class="project-thumb-fallback"
-                            style="background: linear-gradient(135deg, #0e1420, #1f2a1a);">🏠</div>
-                        <span class="project-num">03</span>
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">Sistema de Gestión de Alquiler</h3>
-                        <p class="project-desc">Plataforma de gestión de alquileres desarrollada en React con diseño
-                            minimalista, optimizada para una experiencia clara y eficiente. Interfaz intuitiva para
-                            propietarios e inquilinos.</p>
-                        <div class="project-stack">
-                            <span class="stack-badge">React</span>
-                            <span class="stack-badge">Tailwind CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <!--  <a href="https://alora-seven-sooty.vercel.app/" target="_blank" class="btn btn-primary">
-                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                                    <polyline points="15 3 21 3 21 9" />
-                                    <line x1="10" y1="14" x2="21" y2="3" />
-                                </svg>
-                                Demo en vivo
-                            </a> -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 4 -->
-                <div class="project-card fade-in">
-                    <div class="project-thumb">
-                        <img src="./project4-1.jpg" alt="Gym Management API" onerror="this.style.display='none'">
-                        <div class="project-thumb-fallback"
-                            style="background: linear-gradient(135deg, #0e1420, #2a1a1a);">💪</div>
-                        <span class="project-num">04</span>
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">Gym Management API</h3>
-                        <p class="project-desc">Backend profesional en .NET 8 para gestión integral de un gimnasio.
-                            Arquitectura por capas, autenticación JWT, autorización RBAC y versionado de API (v1, v2)
-                            para garantizar escalabilidad.</p>
-                        <div class="project-stack">
-                            <span class="stack-badge">.NET 8</span>
-                            <span class="stack-badge">C#</span>
-                            <span class="stack-badge">EF Core</span>
-                            <span class="stack-badge">PostgreSQL</span>
-                            <span class="stack-badge">JWT</span>
-                            <span class="stack-badge">Swagger</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ketopi/ApiGimnacio" target="_blank" class="btn btn-outline">
-                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                                </svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 5 -->
-                <div class="project-card fade-in fade-in-delay-1">
-                    <div class="project-thumb">
-                        <img src="./phoenix.png" alt="Server Monitoring" onerror="this.style.display='none'">
-                        <div class="project-thumb-fallback"
-                            style="background: linear-gradient(135deg, #0e1420, #0a1a2a);">📊</div>
-                        <span class="project-num">05</span>
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">Phoenix studio</h3>
-                        <p class="project-desc"> Sitio web moderno para Phoenix Studio, diseñado con una interfaz
-                            atractiva y una experiencia visual inmersiva. Desarrollado con tecnologías de última
-                            generación para ofrecer rendimiento, diseño responsive y una navegación fluida.
+                        <p class="contact-intro">
+                            Siempre estoy abierto a discutir nuevas oportunidades, proyectos interesantes o posibles
+                            colaboraciones. No dudes en escribirme.
                         </p>
-                        <div class="project-stack">
-                            <span class="stack-badge">React</span>
-                            <span class="stack-badge">Tailwind CSS</span>
-                            <span class="stack-badge">Typescript</span>
-                            <span class="stack-badge">Spline</span>
-
-                        </div>
                     </div>
-                </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- ─── CONTACTO ─── -->
-    <section id="contacto">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="fade-in">
-                    <div class="section-head">
-                        <div class="section-label">Contacto</div>
-                        <h2 class="section-title">¿Tienes un<br><em>proyecto en mente?</em></h2>
-                    </div>
-                    <p class="contact-intro">
-                        Siempre estoy abierto a discutir nuevas oportunidades, proyectos interesantes o posibles
-                        colaboraciones. No dudes en escribirme.
-                    </p>
-
-                    <div class="contact-items">
-                        <a href="mailto:totokevin6@gmail.com" class="contact-item">
-                            <div class="contact-icon">✉️</div>
-                            <div>
-                                <div class="contact-label">Email</div>
-                                <div class="contact-value">totokevin6@gmail.com</div>
+                    <div class="fade-in fade-in-delay-2">
+                        <div class="social-panel">
+                            <h3 class="social-panel-title">Conectemos</h3>
+                            <p class="social-panel-sub">Encuéntrame en estas plataformas</p>
+                            <div class="socials">
+                                <a href="mailto:totokevin6@gmail.com" class="social-btn" title="Email">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg>
+                                </a>
+                                <a href="https://wa.me/59163945700?text=Hola%20Kevin%2C%20vi%20tu%20portafolio%20y%20quiero%20conversar%20sobre%20un%20proyecto"
+                                    target="_blank" class="social-btn" title="WhatsApp">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                                    </svg>
+                                </a>
+                                <a href="https://linkedin.com/in/kevin-torrez-pillco-513770323" target="_blank"
+                                    class="social-btn" title="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect x="2" y="9" width="4" height="12" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg>
+                                </a>
+                                <a href="https://instagram.com/k3v1n_reing" target="_blank" class="social-btn"
+                                    title="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/ketopi" target="_blank" class="social-btn" title="GitHub">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </a>
                             </div>
-                        </a>
-                        <a href="https://linkedin.com/in/kevin-torrez-pillco-513770323" target="_blank"
-                            class="contact-item">
-                            <div class="contact-icon">💼</div>
-                            <div>
-                                <div class="contact-label">LinkedIn</div>
-                                <div class="contact-value">Kevin Torrez Pillco</div>
+                            <div class="availability">
+                                <div class="dot-available"></div>
+                                Disponible para nuevos proyectos
                             </div>
-                        </a>
-                        <a href="https://github.com/ketopi" target="_blank" class="contact-item">
-                            <div class="contact-icon">⌨️</div>
-                            <div>
-                                <div class="contact-label">GitHub</div>
-                                <div class="contact-value">github.com/ketopi</div>
-                            </div>
-                        </a>
-                        <div class="contact-item" style="cursor: default;">
-                            <div class="contact-icon">📍</div>
-                            <div>
-                                <div class="contact-label">Ubicación</div>
-                                <div class="contact-value">Cochabamba, Bolivia</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="fade-in fade-in-delay-2">
-                    <div class="social-panel">
-                        <h3 class="social-panel-title">Conectemos</h3>
-                        <p class="social-panel-sub">Encuéntrame en estas plataformas</p>
-                        <div class="socials">
-                            <a href="mailto:kevtorrezpillco@gmail.com" class="social-btn" title="Email">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path
-                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                    <polyline points="22,6 12,13 2,6" />
-                                </svg>
-                            </a>
-                            <a href="https://linkedin.com/in/kevin-torrez-pillco-513770323" target="_blank"
-                                class="social-btn" title="LinkedIn">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path
-                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                                    <rect x="2" y="9" width="4" height="12" />
-                                    <circle cx="4" cy="4" r="2" />
-                                </svg>
-                            </a>
-                            <a href="https://instagram.com/k3v1n_reing" target="_blank" class="social-btn"
-                                title="Instagram">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                                </svg>
-                            </a>
-                            <a href="https://github.com/ketopi" target="_blank" class="social-btn" title="GitHub">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="availability">
-                            <div class="dot-available"></div>
-                            Disponible para nuevos proyectos
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ─── FOOTER ─── -->
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-brand">KT<span>/</span>dev — Kevin Torrez Pillco</div>
-            <div class="footer-copy">Desarrollado con ❤️ desde Cochabamba, Bolivia · 2025</div>
-        </div>
-    </footer>
+        <!-- ─── FOOTER ─── -->
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-brand">KT<span>/</span>dev — Kevin Torrez </div>
+            </div>
+        </footer>
 
-    <script>
-        // Nav scroll
-        const nav = document.getElementById('mainNav');
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('scrolled', window.scrollY > 50);
-        });
-
-        // Mobile menu
-        function toggleMenu() {
-            const links = document.getElementById('navLinks');
-            links.classList.toggle('open');
-        }
-        function closeMenu() {
-            document.getElementById('navLinks').classList.remove('open');
-        }
-
-        // Active nav on scroll
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-links a');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(s => {
-                if (window.scrollY >= s.offsetTop - 120) current = s.id;
+        <script>
+            // Nav scroll
+            const nav = document.getElementById('mainNav');
+            window.addEventListener('scroll', () => {
+                nav.classList.toggle('scrolled', window.scrollY > 50);
             });
-            navLinks.forEach(a => {
-                a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-            });
-        });
 
-        // Fade-in on scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-        }, { threshold: 0.12 });
-
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-
-
-        /* PARTICLES CANVAS */
-        const canvas = document.getElementById('cvs'), ctx = canvas.getContext('2d');
-        let W, H, pts = [];
-        function rsz() {
-            const dpr = window.devicePixelRatio || 1;
-
-            W = canvas.offsetWidth;
-            H = canvas.offsetHeight;
-
-            canvas.width = W * dpr;
-            canvas.height = H * dpr;
-
-            ctx.setTransform(1, 0, 0, 1, 0, 0); // reset importante
-            ctx.scale(dpr, dpr);
-        }
-        rsz(); window.addEventListener('resize', () => { rsz(); init() });
-        class P {
-            constructor() { this.reset() }
-            reset() {
-                this.x = Math.random() * W; this.y = Math.random() * H; this.r = Math.random() * 3 + 1;
-                this.vx = (Math.random() - .5) * .25; this.vy = (Math.random() - .5) * .25; this.a = Math.random() * .7 + .03
+            // Mobile menu
+            function toggleMenu() {
+                const links = document.getElementById('navLinks');
+                links.classList.toggle('open');
             }
-            step() { this.x += this.vx; this.y += this.vy; if (this.x < 0 || this.x > W || this.y < 0 || this.y > H) this.reset() }
-            draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2); ctx.fillStyle = `rgba(100,220,180,${this.a})`; ctx.fill() }
-        }
-        function init() { pts = Array.from({ length: 130 }, () => new P()) }
-        init();
-        function frame() {
-            ctx.clearRect(0, 0, W, H);
-            pts.forEach(p => { p.step(); p.draw() });
-            for (let i = 0; i < pts.length; i++)for (let j = i + 1; j < pts.length; j++) {
-                const d = Math.hypot(pts[i].x - pts[j].x, pts[i].y - pts[j].y);
-                if (d < 110) {
-                    ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y);
-                    ctx.strokeStyle = `rgba(100,220,180,${.1 * (1 - d / 110)})`; ctx.lineWidth = .8; ctx.stroke()
+            function closeMenu() {
+                document.getElementById('navLinks').classList.remove('open');
+            }
+
+            // Active nav on scroll
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(s => {
+                    if (window.scrollY >= s.offsetTop - 120) current = s.id;
+                });
+                navLinks.forEach(a => {
+                    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+                });
+            });
+
+            // Fade-in on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+            }, { threshold: 0.12 });
+
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+
+
+            /* PARTICLES CANVAS */
+            const canvas = document.getElementById('cvs'), ctx = canvas.getContext('2d');
+            let W, H, pts = [];
+            function rsz() {
+                const dpr = window.devicePixelRatio || 1;
+
+                W = canvas.offsetWidth;
+                H = canvas.offsetHeight;
+
+                canvas.width = W * dpr;
+                canvas.height = H * dpr;
+
+                ctx.setTransform(1, 0, 0, 1, 0, 0); // reset importante
+                ctx.scale(dpr, dpr);
+            }
+            rsz(); window.addEventListener('resize', () => { rsz(); init() });
+            class P {
+                constructor() { this.reset() }
+                reset() {
+                    this.x = Math.random() * W; this.y = Math.random() * H; this.r = Math.random() * 3 + 1;
+                    this.vx = (Math.random() - .5) * .25; this.vy = (Math.random() - .5) * .25; this.a = Math.random() * .7 + .03
                 }
+                step() { this.x += this.vx; this.y += this.vy; if (this.x < 0 || this.x > W || this.y < 0 || this.y > H) this.reset() }
+                draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2); ctx.fillStyle = `rgba(100,220,180,${this.a})`; ctx.fill() }
             }
-            requestAnimationFrame(frame);
-        }
-        frame();
-    </script>
+            function init() { pts = Array.from({ length: 130 }, () => new P()) }
+            init();
+            function frame() {
+                ctx.clearRect(0, 0, W, H);
+                pts.forEach(p => { p.step(); p.draw() });
+                for (let i = 0; i < pts.length; i++)for (let j = i + 1; j < pts.length; j++) {
+                    const d = Math.hypot(pts[i].x - pts[j].x, pts[i].y - pts[j].y);
+                    if (d < 110) {
+                        ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y);
+                        ctx.strokeStyle = `rgba(100,220,180,${.1 * (1 - d / 110)})`; ctx.lineWidth = .8; ctx.stroke()
+                    }
+                }
+                requestAnimationFrame(frame);
+            }
+            frame();
+        </script>
 </body>
 
 </html>
